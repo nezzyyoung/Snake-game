@@ -18,9 +18,9 @@ else:
 #initialize game windows
 
 pygame.display.set_caption("Snake Game")
-game_window = pygame.display.set_mode(720, 480)
+game_window = pygame.display.set_mode((720, 480))
 
-#colors
+#colors for the game
 black = pygame.Color(0,0,0)
 white = pygame.Color(255,255,255)
 red = pygame.Color(255,0,0)
