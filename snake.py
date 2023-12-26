@@ -98,7 +98,8 @@ while True:
     elif head_pos[1] > frame_size_y - square_size: 
         head_pos[1] = 0
 
-    #eating apple     
+    #eating apple
+     
     snake_body.insert(0, list(head_pos))
     if head_pos[0] == food_pos[0] and head_pos[1] == food_pos[1]:
         score += 1
@@ -107,6 +108,7 @@ while True:
         snake_body.pop()    
 
     #spawn food
+
     if not food_spawn:
         food_pos = [random.randrange(1,(frame_size_x // square_size)) * square_size, 
                    random.randrange(1,(frame_size_y // square_size)) * square_size]
