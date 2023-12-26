@@ -21,6 +21,7 @@ pygame.display.set_caption("Snake Game")
 game_window = pygame.display.set_mode((720, 480))
 
 #colors for the game
+
 black = pygame.Color(0,0,0)
 white = pygame.Color(255,255,255)
 red = pygame.Color(255,0,0)
@@ -29,7 +30,9 @@ blue = pygame.Color(0,0,255)
 
 
 fps_controller = pygame.time.Clock()
+
 #one snake square size
+
 square_size = 60
 
 def init_vars():
@@ -110,6 +113,7 @@ while True:
         food_spawn = True
 
     #GFX (Graphics)
+
     game_window.fill(black)
     for pos in snake_body:
         pygame.draw.rect(game_window, green, pygame.Rect(pos[0] + 2, pos[1] + 2, square_size - 2, square_size -2))
